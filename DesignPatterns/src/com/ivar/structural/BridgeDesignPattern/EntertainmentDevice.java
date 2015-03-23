@@ -1,30 +1,30 @@
 package com.ivar.structural.BridgeDesignPattern;
 
 public abstract class EntertainmentDevice {
-
+	
 	public int deviceState;
 	public int maxSetting;
 	public int volume = 0;
-
-	public abstract void pressSeven();
-
-	public abstract void pressEight();
-
+	
+	public abstract void keyFivePressed();
+	public abstract void keySixPressed();
+	
 	public void deviceFeedback(){
-		if(deviceState > maxSetting || deviceState < 0 ){
+		if(deviceState > maxSetting || deviceState < 0){
 			deviceState = 0;
 		}
-		System.out.println("On " +deviceState);
+		
+		System.out.println("On" + deviceState );
 	}
-
-	public void pressFive() {
-		volume--;
-		System.out.println("Volume down : " + volume);
-	}
-
-	public void pressSix() {
+	
+	public void volumeUp(){
+		System.out.println("Volume up...");
 		volume++;
-		System.out.println("Volume down : " + volume);
+	}
+	
+	public void volumeDown(){
+		System.out.println("Volume up...");
+		volume--;
 	}
 
 }
