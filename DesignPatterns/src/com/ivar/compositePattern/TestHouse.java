@@ -10,7 +10,7 @@ public class TestHouse {
 		Block block3 = new Block();
 
 		// Initialize three houses
-		House house = new House();
+		House house  = new House();
 		House house1 = new House();
 		House house2 = new House();
 		House house3 = new House();
@@ -31,8 +31,8 @@ public class TestHouse {
 		
 		System.out.println("=========================");
 		
-		house.remove(house3);
-		house.remove(house2);
+		//house.remove(house3);
+		//house.remove(house2);
 		house.assemble();
 
 	}
